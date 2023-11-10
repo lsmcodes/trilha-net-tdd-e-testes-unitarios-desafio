@@ -25,7 +25,7 @@ public class BasicCalculatorTests
     [InlineData("2", '-', "2-2")]
     public void ShouldCallCorrectMethod_WhenReceiveOption(string option, char signal, string expression)
     {
-        // Assert
+        // Arrange
         var mockCalculator = new Mock<ICalculator>();
         var mockConsole = new Mock<IConsole>();
         var calculator = new BasicCalculator(mockConsole.Object, mockCalculator.Object);
